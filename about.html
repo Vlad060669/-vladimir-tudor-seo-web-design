@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About | Vladimir Tudor SEO & Web Design</title>
-  <meta name="description" content="Learn more about Vladimir Tudor, an expert in SEO and web design, dedicated to building accessible, high-performing websites.">
+  <meta name="google-site-verification" content="UI0BI9Ai0NcE260IVqN6Lgqawr_oroDfQzCyCbUsZqY" />
+  <title>About - Vladimir Tudor</title>
+  <meta name="description" content="Learn more about Vladimir Tudor - SEO and Web Design Professional">
   <meta property="og:title" content="About Vladimir Tudor SEO & Web Design">
   <meta property="og:description" content="Learn more about Vladimir Tudor, an expert in SEO and web design.">
   <meta property="og:type" content="website">
@@ -12,6 +13,7 @@
   <meta property="og:image" content="assets/profile.jpg">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/accessibility.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -22,17 +24,28 @@
       "url": "https://yourdomain.com/about.html"
     }
   </script>
+  <script src="js/script.js" defer></script>
 </head>
 <body class="about-page">
   <header>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/visual-selection/Logo .jpg" alt="Vladimir Tudor Logo" width="180" height="50">
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <div style="text-align:center;">
       <h1 style="margin:0;">About Vladimir Tudor</h1>
@@ -84,7 +97,6 @@
   <footer>
     <p>&copy; 2025 Vladimir Tudor. All rights reserved.</p>
   </footer>
-  <script src="js/script.js" defer></script>
   <script>
     // Fade-in animation for About page sections
     document.addEventListener('DOMContentLoaded', function() {

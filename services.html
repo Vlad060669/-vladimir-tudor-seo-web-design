@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services | Vladimir Tudor SEO & Web Design</title>
-  <meta name="description" content="Explore SEO and web design services by Vladimir Tudor. Modern, accessible, and high-performing solutions for your business.">
+  <meta name="google-site-verification" content="UI0BI9Ai0NcE260IVqN6Lgqawr_oroDfQzCyCbUsZqY" />
+  <title>Services - Vladimir Tudor</title>
+  <meta name="description" content="Professional SEO and Web Design Services by Vladimir Tudor">
   <meta property="og:title" content="Services - Vladimir Tudor SEO & Web Design">
   <meta property="og:description" content="Explore SEO and web design services by Vladimir Tudor.">
   <meta property="og:type" content="website">
@@ -12,6 +13,7 @@
   <meta property="og:image" content="assets/profile.jpg">
   <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/accessibility.css">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -23,17 +25,28 @@
       "serviceType": ["SEO", "Web Design", "Accessibility Audits", "Performance Optimization"]
     }
   </script>
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <header>
-    <nav aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html" aria-current="page">Services</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="index.html" class="logo">
+          <img src="assets/visual-selection/Logo .jpg" alt="Vladimir Tudor Logo" width="180" height="50">
+        </a>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </nav>
     <div style="text-align:center;">
       <h1 style="margin:0;">Services</h1>
@@ -94,6 +107,5 @@
   <footer>
     <p>&copy; 2025 Vladimir Tudor. All rights reserved.</p>
   </footer>
-  <script src="js/script.js" defer></script>
 </body>
 </html> 
